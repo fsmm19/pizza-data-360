@@ -1,0 +1,3 @@
+2026-05-21 15:35:24,845 - rappi_parser - ERROR - Invalid JSON format in file: bronze/rappi.json
+2026-05-21 16:23:40,903 - pipeline.rappi_parser - WARNING - Order with unexpected number of keys: 4. Order data: {'order_id': 'R103', 'item': 'Pizz_Pepp_Large', 'qty': 1, 'price': '45000'}
+2026-05-21 16:24:55,103 - pipeline.rappi_parser - WARNING - Order with unexpected number of keys: 4. Order data: {'order_id': 'R103', 'item': 'Pizz_Pepp_Large', 'qty': 1, 'price': '45000'}

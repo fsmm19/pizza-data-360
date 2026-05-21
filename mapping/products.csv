@@ -1,0 +1,5 @@
+source_id,source,canonical_product_id,canonical_name,confidence
+Pizz_Pepp_Med,rappi,PROD-001,Pizza Pepperoni Mediana,high
+Mediana Pepperoni,ubereats,PROD-001,Pizza Pepperoni Mediana,high
+SKU-992-P,pos,PROD-001,Pizza Pepperoni Mediana,high
+Pizz_Haw_Med,rappi,PROD-002,Pizza Hawaiana Mediana,high
