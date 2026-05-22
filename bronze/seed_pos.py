@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS ventas (
 
 cursor.executemany(
     """
-INSERT INTO Ventas (sku, quantity, unit_price, date)
+INSERT INTO ventas (sku, quantity, unit_price, date)
 VALUES (?, ?, ?, ?)
 """,
     [

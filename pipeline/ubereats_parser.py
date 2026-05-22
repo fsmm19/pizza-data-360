@@ -1,7 +1,7 @@
 import logging, csv
 from datetime import datetime
 
-logger = logging.getLogger(f"pipeline.{__name__}")
+logger = logging.getLogger(__name__)
 ORDER_ROW_LENGTH = 5
 
 

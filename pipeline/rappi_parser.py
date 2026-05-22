@@ -1,7 +1,7 @@
 import logging, json
 from datetime import datetime, timezone
 
-logger = logging.getLogger(f"pipeline.{__name__}")
+logger = logging.getLogger(__name__)
 ORDER_KEYS_LENGTH = 5
 
 
@@ -55,7 +55,7 @@ def _transform(orders: list[dict]) -> list[dict]:
                         )
                         is_valid = False
                         break
-                    transformed_order["raw_id"] = f"R-{value}"
+                    transformed_order["raw_id"] = f"R-{value[1:]}"
                 case "item":
                     if not isinstance(value, str):
                         logger.warning(
@@ -87,7 +87,7 @@ def _transform(orders: list[dict]) -> list[dict]:
                         break
                     try:
                         transformed_order["unit_price"] = float(value)
-                        if transformed_order[key] < 0:
+                        if transformed_order["unit_price"] < 0:
                             logger.warning(
                                 f"Negative price value: {value}. Order data: {order}"
                             )

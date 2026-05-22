@@ -21,6 +21,16 @@
 
 ---
 
-1. Unificación de Schema: Define un struct o class único para el DW.
-2. Normalización de Tipos: Convierte el timestamp de Rappi, el string de Uber y el Date del POS a un solo formato de tiempo.
-3. Mapeo de Atributos: Crea una tabla de equivalencias (Mapping Table) para que `"Pizz_Pepp_Med"`, `"Mediana Pepperoni"` y `"SKU-992-P"` se consoliden bajo un solo ID de producto.
+# Fact Table de ventas
+
+```
+Fact_Ventas
+├── order_id (PK)
+├── date_key (FK → Dim_Fecha)
+├── product_key (FK → Dim_Producto)
+├── channel_key (FK → Dim_Canal)
+├── quantity
+├── unit_price
+├── total_price
+└── time_precision
+```
