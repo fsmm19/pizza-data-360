@@ -1,3 +1,8 @@
 2026-05-21 15:35:24,845 - rappi_parser - ERROR - Invalid JSON format in file: bronze/rappi.json
 2026-05-21 16:23:40,903 - pipeline.rappi_parser - WARNING - Order with unexpected number of keys: 4. Order data: {'order_id': 'R103', 'item': 'Pizz_Pepp_Large', 'qty': 1, 'price': '45000'}
 2026-05-21 16:24:55,103 - pipeline.rappi_parser - WARNING - Order with unexpected number of keys: 4. Order data: {'order_id': 'R103', 'item': 'Pizz_Pepp_Large', 'qty': 1, 'price': '45000'}
+2026-05-21 22:17:37,357 - pipeline.rappi_parser - WARNING - Invalid type for 'order_id': expected str, got int. Order data: {'order_id': 102, 'item': 'Pizz_Pepp_Med', 'qty': 2, 'price': '35000', 'ts': 1715637600}
+2026-05-21 22:40:20,649 - pipeline.rappi_parser - WARNING - Invalid type for 'qty': expected int, got str. Order data: {'qty': '1', 'price': '45000', 'ts': 1715637660, 'raw_id': 'R103', 'source_id': 'Pizz_Pepp_Large'}
+2026-05-21 22:42:22,378 - pipeline.rappi_parser - WARNING - Invalid type for 'qty': expected int, got str. Order data: {'qty': '1', 'price': '45000', 'ts': 1715637660, 'raw_id': 'R103', 'source_id': 'Pizz_Pepp_Large'}
+2026-05-21 22:43:04,682 - pipeline.rappi_parser - WARNING - Invalid type for 'qty': expected int, got str. Order data: {'qty': '1', 'price': '45000', 'ts': 1715637660, 'raw_id': 'R103', 'source_id': 'Pizz_Pepp_Large'}
+2026-05-21 22:54:28,798 - pipeline.rappi_parser - WARNING - Invalid type for 'qty': expected int, got str. Order data: {'order_id': 'R103', 'item': 'Pizz_Pepp_Large', 'qty': '1', 'price': '45000', 'ts': 1715637660}
